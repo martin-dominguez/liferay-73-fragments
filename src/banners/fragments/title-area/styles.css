@@ -1,0 +1,120 @@
+/*================================================
+Page Title Area CSS
+=================================================*/
+.page-title-area {
+  position: relative;
+  z-index: 1;
+  background-color: #212529;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+
+.page-title-area::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: -1;
+  opacity: .60;
+}
+
+.page-title-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .04;
+  height: 100%;
+  z-index: -1;
+  background-image: url([resources:bg_lines.svg]);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+}
+
+.page-title-area.item-bg {
+  background-image: url([resources:default-bg.png]);
+}
+
+.page-title-content {
+  text-align: center;
+}
+
+.page-title-content h2 {
+  color: #ffffff;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.page-title-content p,
+.page-title-content p + div {
+  color: #ffffff;
+  max-width: 600px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-bottom: 0;
+}
+
+.page-title-content ul li {
+  display: inline-block;
+  color: #ee0979;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.page-title-content ul li a {
+  color: #212529;
+}
+
+.page-title-content ul li a:hover {
+  color: #44ce6f;
+}
+
+.page-title-content ul li::before {
+  content: "\F054";
+  position: absolute;
+  right: -15px;
+  top: 5px;
+  color: #212529;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+}
+
+.page-title-content ul li:last-child::before {
+  display: none;
+}
+
+.page-title-content ul li:first-child {
+  margin-left: 0;
+}
