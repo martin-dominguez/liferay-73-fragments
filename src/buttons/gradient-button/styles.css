@@ -1,0 +1,69 @@
+.gradient-button a {
+  font-weight: 700;
+  border: none;
+  padding: 14.5px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: initial;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.gradient-button a {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.gradient-button a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gradient-button a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gradient-button a:hover, 
+.gradient-button a:focus {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    -webkit-box-shadow: unset !important;
+            box-shadow: unset !important;
+}
+
+.gradient-button a:hover::before, 
+.gradient-button a:focus::before {
+        opacity: 0;
+        visibility: hidden;
+}
+
+.gradient-button a:hover::after, 
+.gradient-button a:focus::after {
+        opacity: 1;
+        visibility: visible;
+}
