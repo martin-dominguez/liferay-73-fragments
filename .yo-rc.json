@@ -3,9 +3,9 @@
     "minLiferayVersion": "7.3.0",
     "promptValues": {
       "host": "http://localhost:8080",
-      "username": "admin@liferay.com",
+      "username": "test@liferay.com",
       "companyId": "20097",
-      "groupId": "37778"
+      "groupId": "20121"
     }
   }
 }

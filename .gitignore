@@ -1,0 +1,6 @@
+node_modules
+yarn.lock
+src/life-insurances-customer
+src/partner-enablement-collection
+src/react
+build

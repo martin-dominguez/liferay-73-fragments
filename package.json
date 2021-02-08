@@ -2,17 +2,14 @@
   "name": "liferay-7-3-fragments",
   "description": "Liferay Fragments project",
   "version": "1.0.0",
-
   "engines": {
     "node": ">= 8.0.0",
     "npm": ">= 6.0.0"
   },
-
   "keywords": [
     "liferay",
     "liferay-fragments"
   ],
-
   "scripts": {
     "add-collection": "yo liferay-fragments:collection",
     "add-fragment": "yo liferay-fragments:fragment",
@@ -21,5 +18,9 @@
     "import": "yo liferay-fragments:import",
     "import:watch": "yo liferay-fragments:import --watch",
     "preview": "yo liferay-fragments:preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "gulp": "^4.0.2"
   }
 }
