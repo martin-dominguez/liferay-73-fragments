@@ -1,0 +1,28 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "object",
+          "label": "widget-color",
+          "name": "widgetColor",
+          "type": "colorPalette",
+					"defaultValue": {
+						"cssClass": "primary",
+						"rgbValue": "rgb(11,95,255)"
+					}
+        },
+				{
+					"dataType": "string",
+					"name": "progress",
+					"label": "Progress",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "50"
+					},
+					"defaultValue": "50"
+        }
+      ]
+    }
+  ]
+}

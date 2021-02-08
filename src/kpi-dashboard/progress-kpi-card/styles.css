@@ -1,0 +1,26 @@
+.percent-kpi {
+	padding: 1rem;
+	position: relative;
+}
+
+.percent-kpi .widget-content .widget-content-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    position: relative;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.percent-kpi .widget-numbers {
+    font-weight: bold;
+    font-size: 1.6rem;
+    display: block;
+    line-height: 1;
+    margin: 1rem auto;
+}
+
+.percent-kpi .widget-content-left {
+	font-size: 0.85rem;
+}

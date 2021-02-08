@@ -1,0 +1,14 @@
+.user-welcome {
+  color: inherit;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+}
+.user-welcome .welcome {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+.user-welcome .welcome a {
+  font-size:  0.55em;
+}

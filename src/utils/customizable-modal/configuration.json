@@ -1,0 +1,44 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "3000",
+					"label": "Delay in ms to show",
+					"name": "delay",
+					"type": "text",
+                    "typeOptions": {
+                        "placeholder": "3000"
+                    }
+        },
+        {
+					"dataType": "string",
+					"defaultValue": "primary",
+					"label": "Footer Button Type",
+					"name": "buttonType",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "primary"
+							},
+							{
+								"value": "secondary"
+							},
+							{
+								"value": "link"
+							},
+							{
+								"value": "outline-primary"
+							},
+							{
+								"value": "outline-secondary"
+							}
+						]
+					}
+        }
+      ]
+    }
+  ]
+}

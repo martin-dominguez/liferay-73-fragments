@@ -1,0 +1,35 @@
+<div class="card mb-3 widget-chart">
+	<div class="widget-chart-content">
+		<div class="icon-wrapper rounded-circle">
+			<div class="icon-wrapper-bg bg-${htmlUtil.escape(configuration.textColor.cssClass)}">
+			</div>
+			[@liferay_ui.icon 
+				cssClass="fill-" + configuration.textColor.cssClass
+				icon=configuration.icon 
+				markupView="lexicon" /]
+		</div>
+		<div 
+				 class="widget-numbers text-dark"
+				 data-lfr-editable-id="number" 
+				 data-lfr-editable-type="text">
+			45.8k</div>
+		<div 
+				 class="widget-subheading text-dark"
+				 data-lfr-editable-id="text1" 
+				 data-lfr-editable-type="text">
+			Total Views</div>
+		[#if configuration.progression == "positive"]
+			<div class="widget-description text-success">
+				[@liferay_ui.icon icon="angle-up" markupView="lexicon" /]
+		[#else]
+			<div class="widget-description text-danger">
+				[@liferay_ui.icon icon="angle-down" markupView="lexicon" /]
+		[/#if]
+				<span 
+							class="pl-1"
+							data-lfr-editable-id="progress" 
+							data-lfr-editable-type="text">
+					175.5%</span>
+			</div>
+	</div>
+</div>

@@ -1,0 +1,41 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "object",
+          "label": "text-color",
+          "name": "textColor",
+          "type": "colorPalette",
+					"defaultValue": {
+						"cssClass": "primary",
+						"rgbValue": "rgb(11,95,255)"
+					}
+        },
+        {
+          "dataType": "string",
+				  "defaultValue": "cog",
+          "label": "Icon",
+          "name": "icon",
+          "type": "text",
+					"typeOptions": {
+						"placeholder": "visit https://clayui.com/docs/components/icon.html"
+					}
+				},
+				{
+					"dataType": "string",
+					"name": "progression",
+					"label": "Progression",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{"value": "positive"},
+							{"value": "negative"}
+						]
+					},
+					"defaultValue": "positive"
+        }
+      ]
+    }
+  ]
+}

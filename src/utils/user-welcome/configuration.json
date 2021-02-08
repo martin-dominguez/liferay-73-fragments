@@ -1,0 +1,28 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "backgroundColor",
+          "label": "Background Color",
+          "type": "colorPalette",
+          "dataType": "object",
+          "defaultValue": {
+              "cssClass": "primary",
+              "rgbValue": "rgb(11,95,255)"
+          }
+        },
+        {
+          "name": "textColor",
+          "label": "Text Color",
+          "type": "colorPalette",
+          "dataType": "object",
+          "defaultValue": {
+              "cssClass": "white",
+              "rgbValue": "rgb(255,255,255)"
+          }
+        }
+      ]
+    }
+  ]
+}

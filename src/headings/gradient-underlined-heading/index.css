@@ -1,0 +1,26 @@
+.intranet-heading {
+  position: relative;
+	overflow: hidden;
+}
+
+.intranet-heading:after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(
+		90deg, 
+		var(--primary) 15%, #eeeeee 35%, var(--primary) 55%);
+  left: 0;
+	bottom: 0;
+  width: 400%;
+  height: 2.2px;
+	animation: underline-gradient 6s linear infinite;
+}
+
+@keyframes underline-gradient { 
+  0%{
+    transform: translate3d(0%, 0%, 0);
+  }
+  100%{
+    transform: translate3d(-75%, 0%, 0);
+  }
+}

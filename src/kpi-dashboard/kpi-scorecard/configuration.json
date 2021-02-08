@@ -1,0 +1,48 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "object",
+          "label": "widget-color",
+          "name": "widgetColor",
+          "type": "colorPalette",
+					"defaultValue": {
+						"cssClass": "primary",
+						"rgbValue": "rgb(11,95,255)"
+					}
+        },
+				{
+					"dataType": "string",
+					"name": "current",
+					"label": "Current Value",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "50"
+					},
+					"defaultValue": "50"
+        },
+				{
+					"dataType": "string",
+					"name": "min",
+					"label": "Min Value",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "0"
+					},
+					"defaultValue": "0"
+        },
+				{
+					"dataType": "string",
+					"name": "max",
+					"label": "MaxValue",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "100"
+					},
+					"defaultValue": "100"
+        }
+      ]
+    }
+  ]
+}

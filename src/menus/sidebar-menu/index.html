@@ -1,0 +1,39 @@
+<div class="main-sidebar-menu toggled">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+   [@liferay_ui.icon icon="bars" markupView="lexicon" /]
+ </a>
+ <nav id="sidebar" class="sidebar-wrapper">
+   <div class="sidebar-content">
+     <div class="sidebar-brand">
+         <img src="${themeDisplay.getCompanyLogo()}" alt="">
+       <div id="close-sidebar">
+         [@liferay_ui.icon icon="times" markupView="lexicon" /]
+       </div>
+     </div>
+     <div class="sidebar-header">
+       <div class="user-pic">
+         [@liferay.user_personal_bar /]
+       </div>
+       <div class="user-info">
+         <span class="user-name">${user.getFullName()}</span>
+         <span class="user-role">${user.getJobTitle()}</span>
+       </div>
+     </div>
+     <!-- sidebar-header  -->
+     <div class="sidebar-search">
+       [#assign preferences_search = freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination": "/search"}) /]
+       [@liferay.search_bar default_preferences="${preferences_search}" /]
+     </div>
+     <!-- sidebar-search  -->
+     <div class="sidebar-menu">
+       [#assign preferences_menu = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone") /]
+       [@liferay.navigation_menu default_preferences="${preferences_menu}" /]
+     </div>	
+     <!-- sidebar-menu  -->
+   </div>
+   <!-- sidebar-content  -->
+   <div class="sidebar-footer">
+       © <script>document.write(new Date().getFullYear())</script> ${htmlUtil.escape(layout.getGroup().getDescriptiveName())}
+   </div>
+ </nav>
+</div>

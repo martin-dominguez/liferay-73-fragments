@@ -1,0 +1,41 @@
+.min-max-kpi {
+	padding: 1rem;
+	position: relative;
+}
+
+.min-max-kpi .widget-content .widget-content-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    position: relative;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.min-max-kpi .progress {
+	height: 1.0rem;
+	border-radius: 5px;
+  min-width: 3.25rem;
+}
+.min-max-kpi .progress-bar {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.min-max-kpi .progress-bar.active {
+	animation-duration: 10s;
+}
+
+.min-max-kpi .progress-bar-stripped {
+    background-size: 1.2rem 1.2rem;
+}
+
+.min-max-kpi .widget-content-left {
+	font-size: 0.85rem;
+}
+
+.min-max-kpi .indicator {
+	margin-bottom: 2px;
+	font-size: 0.85rem;
+}

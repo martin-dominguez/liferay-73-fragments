@@ -1,0 +1,24 @@
+<div class="user-welcome d-inline-block p-4 bg-${configuration.backgroundColor.color}">
+	<div class="user-welcome-inner d-flex">
+		[@liferay_ui["user-portrait"]
+			cssClass="my-auto"
+			size="xl"
+			userId=user.getUserId()
+		/]
+		<div class="welcome ml-3">
+				<div class="welcome-pitle text-${configuration.textColor.color}">
+						${user.greeting}
+				</div>
+				<a
+					class="link text-${configuration.textColor.color}"
+					href="/group/life-customers/~/control_panel/manage?p_p_id=com_liferay_my_account_web_portlet_MyAccountPortlet&p_p_lifecycle=0"
+					id="fragment-${fragmentEntryLinkNamespace}-edit-profile"
+				>
+					&gt;&nbsp;[@liferay_ui["message"]
+							key="my-account" 
+					/]
+				</a>
+		</div>
+
+	</div>
+</div>

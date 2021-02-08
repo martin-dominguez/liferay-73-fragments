@@ -1,0 +1,85 @@
+.widget-chart {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.widget-chart .widget-chart-content {
+  position: relative;
+  z-index: 5;
+}
+
+.icon-wrapper {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon-wrapper .icon-wrapper-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: .2;
+}
+
+.icon-wrapper .lexicon-icon {
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 1.7rem;
+}
+
+.widget-chart .widget-numbers {
+  font-weight: bold;
+  font-size: 2.5rem;
+  display: block;
+  line-height: 1;
+  margin: 1rem auto;
+}
+
+.widget-chart .widget-subheading {
+  margin: -0.5rem 0 0;
+  display: block;
+  opacity: .6;
+}
+
+.widget-chart .widget-description {
+  margin: 1rem 0 0;
+}
+
+.widget-chart .chart-wrapper-relative {
+  position: relative;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.widget-chart .widget-chart-wrapper {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.icon-wrapper .fill-primary .lexicon-icon { fill: var(--primary); }
+.icon-wrapper .fill-secondary .lexicon-icon { fill: var(--secondary); }
+.icon-wrapper .fill-info .lexicon-icon { fill: var(--info); }
+.icon-wrapper .fill-success .lexicon-icon { fill: var(--success); }
+.icon-wrapper .fill-danger .lexicon-icon { fill: var(--danger); }
+.icon-wrapper .fill-warning .lexicon-icon { fill: var(--warning); }
+.icon-wrapper .fill-dark .lexicon-icon { fill: var(--dark); }
+.icon-wrapper .fill-light .lexicon-icon { fill: var(--light); }
+.icon-wrapper .fill-white .lexicon-icon { fill: var(--white); }
+.icon-wrapper .fill-black .lexicon-icon { fill: var(--black); }

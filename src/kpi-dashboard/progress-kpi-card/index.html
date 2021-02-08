@@ -1,0 +1,28 @@
+<div class="percent-kpi mb-3 text-left card">
+	<div class="widget-content">
+		<div class="widget-content-outer">
+			<div class="widget-content-wrapper">
+				<div class="widget-content-left pr-2">
+					<div class="widget-numbers mt-0 text-${configuration.widgetColor.cssClass}">${configuration.progress}%</div>
+				</div>
+				<div class="widget-content-right w-100">
+					<div class="progress-bar-xs progress">
+						<div 
+								 class="progress-bar bg-${configuration.widgetColor.cssClass}" 
+								 role="progressbar" 
+								 aria-valuenow="${configuration.progress}" 
+								 aria-valuemin="0" 
+								 aria-valuemax="100" 
+								 style="width: ${configuration.progress}%;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="widget-content-left">
+				<div class="text-muted" 
+				 data-lfr-editable-id="message" 
+				 data-lfr-editable-type="text">Income Target</div>
+			</div>
+		</div>
+	</div>
+</div>

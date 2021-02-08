@@ -1,0 +1,63 @@
+<div class="header-tag">
+  <!--top header-->
+  <header >
+   <!--most top info -->
+   <div class="top-info bg-${configuration.backgroundColor.color}">
+     <div class="container d-flex justify-content-end">
+       <ul class="navbar-nav">
+         <li class="company-data">
+           [@liferay_ui.icon icon="envelope-closed" markupView="lexicon" /]
+           <a 
+             data-lfr-editable-id="mail"
+             data-lfr-editable-type="link"
+             href=""
+             id="fragment-${fragmentEntryLinkNamespace}-mail">
+             info@liferay.com
+           </a>
+         </li>
+         <li class="company-data">
+           [@liferay_ui.icon icon="phone" markupView="lexicon" /]
+           <a 
+             data-lfr-editable-id="phone"
+             data-lfr-editable-type="link"
+             href=""
+             id="fragment-${fragmentEntryLinkNamespace}-phone">
+             +99 999 999 99
+           </a>
+         </li>
+         <li>[@liferay.languages /]</li>
+       </ul>
+     </div>
+   </div>
+   <!-- End most top info -->
+
+   <nav class="navbar navbar-expand-md" data-toggle="sticky-onscroll">
+       <div class="container">
+         <div class="autofit-row autofit-row-center">
+             <a class="navbar-brand autofit-col" href="/group/life-customers">
+                 <img src="${themeDisplay.getCompanyLogo()}" alt="">
+             </a>
+             <div class="collapse navbar-collapse autofit-col-expand" id="navbarSupportedContent">
+                 [#assign preferences_menu = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone") /]
+                 [@liferay.navigation_menu default_preferences="${preferences_menu}" /]
+             </div>
+             <div class="autofit-col autofit-col-expand">
+               <div class="justify-content-md-end mr-4 navbar-form" role="search">
+                 [#assign preferences_search = freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination": "/search"}) /]
+                 [@liferay.search_bar default_preferences="${preferences_search}" /]
+               </div>
+             </div>
+             <div class="autofit-col">
+               [@liferay.user_personal_bar /]
+             </div>
+             <button class="navbar-toggler autofit-col" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon">
+                   [@liferay_ui.icon icon="bars" markupView="lexicon" /]
+                 </span>
+             </button>
+           </div>
+       </div>
+   </nav>
+
+</header>
+<!-- End top header-->
