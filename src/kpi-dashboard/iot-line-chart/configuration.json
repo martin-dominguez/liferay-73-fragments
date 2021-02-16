@@ -15,7 +15,7 @@
 				},
         {
           "dataType": "object",
-          "label": "stroke-color",
+          "label": "Stroke Color",
           "name": "strokeColor",
           "type": "colorPalette",
 					"defaultValue": {
