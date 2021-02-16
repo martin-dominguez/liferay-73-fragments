@@ -1,0 +1,40 @@
+{
+	"fieldSets": [
+		{
+      "fields": [
+				{
+					"name": "fragmentId",
+					"label": "Fragment ID",
+					"description": "If you are going to use more than one of this fragments in a page, you'll need different ids",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Your ID here"
+					},
+					"dataType": "string",
+					"defaultValue": "1"
+				},
+        {
+          "dataType": "object",
+          "label": "stroke-color",
+          "name": "strokeColor",
+          "type": "colorPalette",
+					"defaultValue": {
+						"cssClass": "primary",
+						"rgbValue": "rgb(11,95,255)"
+					}
+        },
+				{
+					"name": "data",
+					"label": "Data",
+					"description": "Set the Data values separated by coma",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Values separated by coma"
+					},
+					"dataType": "string",
+					"defaultValue": "14,52,34,14,56,64,87,28,29,100"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,51 @@
+{
+	"fieldSets": [
+		{
+      "fields": [
+				{
+					"name": "fragmentId",
+					"label": "Fragment ID",
+					"description": "If you are going to use more than one of this fragments in a page, you'll need different ids",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Your ID here"
+					},
+					"dataType": "string",
+					"defaultValue": "1"
+				},
+        {
+          "dataType": "object",
+          "label": "color",
+          "name": "color",
+          "type": "colorPalette",
+					"defaultValue": {
+						"cssClass": "primary",
+						"rgbValue": "rgb(11,95,255)"
+					}
+        },
+				{
+					"name": "data",
+					"label": "Data",
+					"description": "Set the Data values separated by coma",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Values separated by comma"
+					},
+					"dataType": "string",
+					"defaultValue": "14,52,34"
+				},
+				{
+					"name": "labels",
+					"label": "Labels",
+					"description": "Set the labels separated by comma",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "Set the labels separated by comma"
+					},
+					"dataType": "string",
+					"defaultValue": "Team A, Team B, Team C"
+				}
+			]
+		}
+	]
+}

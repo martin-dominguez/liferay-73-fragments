@@ -1,6 +1,11 @@
 // Sticky navbar
 // =========================
 $(document).ready(function () {
+    // If publications is active, add has-publications class to body
+    if ( $(".change-tracking-indicator").length ) {
+        $('body').addClass('has-publications');
+    }
+
     // Custom function which toggles between sticky class (is-sticky)
     var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
         var stickyHeight = sticky.outerHeight();
