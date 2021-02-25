@@ -71,7 +71,7 @@ body.has-control-menu .main-sidebar-menu .sidebar-wrapper {
 body.open .main-sidebar-menu.toggled .sidebar-wrapper {
 	left: 320px;
 }
-body.has-edit-mode-menu.has-control-menu {
+body.has-edit-mode-menu.has-control-menu .sidebar-wrapper {
 	top: 120px;
 }
 /*----------------show sidebar button----------------*/

@@ -167,3 +167,42 @@ A user welcome message area, with a link to the user's profile and the user's po
 ### Options
 * **Background Color**
 * **Text color**
+
+# TODO List
+### Dark slider
+- a drop zone intead of text
+- opacity configurable
+- overlay color configurable
+- configure the number of slides
+- let choose the position of the slides navigation
+
+### Title area
+Discarded 
+
+### Gradient button
+- fix the top margin issue.
+- select colors using hex codes
+
+### Underlined heading
+ - hight
+ - colors
+ - check if a negative margin config is needed
+
+### KPI
+ - use fragementElement instead of the fragmentID
+ - Create a theme contributor
+ - Turn the fragments into osgi modules.
+
+### Sidebar
+ - make it configurable
+
+
+### Modal:
+- translate the close text
+- use just text, instead of rich-text
+- try to position the modal window
+
+### Welcome message 
+- in utilities collection
+
+**Check generateFragmentDocs.py --> Autodocs**
