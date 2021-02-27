@@ -196,12 +196,6 @@ Discarded
 ### Sidebar
  - make it configurable
 
-
-### Modal:
-- translate the close text
-- use just text, instead of rich-text
-- try to position the modal window
-
 ### Welcome message 
 - in utilities collection
 

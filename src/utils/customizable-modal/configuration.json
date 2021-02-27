@@ -1,18 +1,18 @@
 {
-  "fieldSets": [
-    {
-      "fields": [
+	"fieldSets": [
+	  	{
+			"fields": [
 				{
 					"dataType": "string",
 					"defaultValue": "3000",
 					"label": "Delay in ms to show",
 					"name": "delay",
 					"type": "text",
-                    "typeOptions": {
-                        "placeholder": "3000"
-                    }
-        },
-        {
+					"typeOptions": {
+						"placeholder": "3000"
+					}
+				},
+				{
 					"dataType": "string",
 					"defaultValue": "primary",
 					"label": "Footer Button Type",
@@ -37,8 +37,27 @@
 							}
 						]
 					}
-        }
-      ]
-    }
-  ]
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "Modal vertical alignment",
+					"name": "modalVerticalAlignment",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "",
+								"label": "Top"
+							},
+							{
+								"value": "modal-dialog-centered",
+								"label": "Centered"
+							}
+						]	
+					}
+				}
+			]
+	  	}
+	]
 }
