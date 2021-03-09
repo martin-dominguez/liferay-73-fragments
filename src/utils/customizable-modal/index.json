@@ -1,11 +1,11 @@
 {
 	"fieldSets": [
-	  	{
+		{
 			"fields": [
 				{
 					"dataType": "string",
 					"defaultValue": "3000",
-					"label": "Delay in ms to show",
+					"label": "delay-show",
 					"name": "delay",
 					"type": "text",
 					"typeOptions": {
@@ -15,7 +15,7 @@
 				{
 					"dataType": "string",
 					"defaultValue": "primary",
-					"label": "Footer Button Type",
+					"label": "footer-button-type",
 					"name": "buttonType",
 					"type": "select",
 					"typeOptions": {
@@ -41,23 +41,23 @@
 				{
 					"dataType": "string",
 					"defaultValue": "",
-					"label": "Modal vertical alignment",
+					"label": "modal-alignment",
 					"name": "modalVerticalAlignment",
 					"type": "select",
 					"typeOptions": {
 						"validValues": [
 							{
-								"value": "",
-								"label": "Top"
+								"label": "top",
+								"value": ""
 							},
 							{
-								"value": "modal-dialog-centered",
-								"label": "Centered"
+								"label": "centered",
+								"value": "modal-dialog-centered"
 							}
-						]	
+						]
 					}
 				}
 			]
-	  	}
+		}
 	]
 }

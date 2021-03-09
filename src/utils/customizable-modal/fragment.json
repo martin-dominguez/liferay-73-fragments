@@ -1,8 +1,5 @@
 {
-  "cssPath": "styles.css",
-  "configurationPath": "configuration.json",
-  "htmlPath": "index.html",
-  "jsPath": "main.js",
-  "name": "Customizable Modal",
-  "type": "component"
+	"name": "customizable-modal",
+	"thumbnail": "customizable-modal.png",
+	"type": "component"
 }
