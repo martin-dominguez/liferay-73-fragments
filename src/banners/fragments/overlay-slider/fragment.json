@@ -3,7 +3,7 @@
   "configurationPath": "configuration.json",
   "htmlPath": "index.html",
   "jsPath": "main.js",
-  "name": "Dark Slider",
+  "name": "Overlay Slider",
   "type": "component",
   "thumbnailPath": "thumbnail.png"
 }
