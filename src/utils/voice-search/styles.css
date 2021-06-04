@@ -1,0 +1,53 @@
+.voice-search .form {
+	margin: 10px;
+}
+.voice-search .form-control {
+	background-color: #fff;
+  border: 1px solid #dfe1e5 !important;
+	border-radius: 24px !important;
+	height: 44px;
+	padding-left: 50px
+}
+.voice-search .form-control:hover {
+	box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+	border-color: rgba(223,225,229,0);
+}
+
+.voice-search .input-group-inset-item {
+	background-color: transparent;   
+	height: 44px;
+	top: 0;
+	position: absolute;
+	left: 0;
+	border: none;
+  outline: none;
+	z-index: 5;
+}
+
+.voice-search .voice-button {
+	position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+	height: 44px;
+  width: 2.5rem;
+  outline: none;
+  border: none;
+	color: #6b6c7e;
+	font-size: 1.2em;
+	padding: 0 5px;
+	margin: 0 .125rem;
+	z-index: 5;
+}
+.voice-search .btn:focus {box-shadow: none;}
+
+.voice-info {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.voice-search .input-group-inset:focus ~ .input-group-inset-item {
+	background-color: transparent;
+	border: none;
+}
