@@ -1,14 +1,38 @@
 {
-  "fieldSets": [
-    {
-      "fields": [
-        {
-          "dataType": "object",
-          "label": "text-color",
-          "name": "textColor",
-          "type": "colorPalette"
-        }
-      ]
-    }
-  ]
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"name": "searchCommand",
+					"label": "search-command",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "search"
+					},
+					"dataType": "string",
+					"defaultValue": "search"
+				},
+				{
+					"name": "stopCommand",
+					"label": "stop-command",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "stop"
+					},
+					"dataType": "string",
+					"defaultValue": "stop"
+				},
+				{
+					"name": "resetCommand",
+					"label": "reset-command",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "reset"
+					},
+					"dataType": "string",
+					"defaultValue": "reset"
+				}
+			]
+		}
+	]
 }

@@ -1,4 +1,5 @@
-<div class="voice-search">  <h1 data-lfr-editable-id="title" data-lfr-editable-type="text">
-    Voice Search
-  </h1>
+<div class="voice-search">
+	[#assign preferences_search = freeMarkerPortletPreferences.getPreferences({"portletSetupPortletDecoratorId": "barebone", "destination": "/search"}) /]
+  [@liferay.search_bar default_preferences="${preferences_search}" /]
 </div>
+<p class="voice-info"></p>
