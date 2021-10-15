@@ -1,0 +1,144 @@
+<div class="modern-header ${configuration.showBanner?then('no-slider','')}">
+	<div class="header-wrapper">
+		<div class="container">
+			<header class="site-header pt-4">
+				<div class="header-container d-flex w-100">
+					<div class="logo-col">
+						<a href="${themeDisplay.getURLHome()}">
+							<img src="${themeDisplay.getCompanyLogo()}" alt="EHS site logo" class="website-logo" />
+						</a>
+					</div>
+					<div class="menu-container">
+						<div class="user-personal-bar">
+							[#if !themeDisplay.isSignedIn()]
+								<a class="menu-login" href="#">
+									[@clay.icon symbol="user" cssClass="mr-2" /]
+									[@liferay_ui["message"] key="sign-in" /]
+								</a>
+							[#else]
+								[@liferay.user_personal_bar /]
+							[/#if]
+						</div>
+						<a class="menu-search mx-4" href="#">
+							<span class="mr-2">[@liferay_ui.message key="search" /]</span>
+							[@clay.icon symbol="search" /]
+						</a>
+						<a class="menu-action" href="#">
+							<span class="mr-2">[@liferay_ui.message key="menu" /]</span>
+							[@clay.icon symbol="bars" /]
+						</a>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	<div class="site-main-menu">
+			<div class="main-menu-container">
+					<div class="menu-header d-flex">
+							<img src="${themeDisplay.getCompanyLogo()}" alt="site logo" class="website-logo-alt">
+							<a href="#" class="menu-action-close">
+									[@clay.icon symbol="times" /]
+							</a>
+					</div>
+					[#assign 
+						menuPref = freeMarkerPortletPreferences.getPreferences({
+							"portletSetupPortletDecoratorId": "barebone", 
+							"displayStyle": "ddmTemplate_NAVBAR-BLANK-FTL",
+							"rootMenuItemType": "absolute",
+							"rootMenuItemLevel": "0",
+							"displayDepth": "2",
+							"expandedLevels": "all"
+						})
+					/]
+					[@liferay.navigation_menu 
+						default_preferences="${menuPref}"	
+					/]
+			</div>
+	</div>
+	
+	<div class="site-main-search">
+			<div class="main-search-container">
+				<div class="search-form">
+					<form action="${configuration.searchPage}" method="GET">
+						<fieldset class="search-bar-fieldset">
+                            <legend class="d-none">[@liferay_ui.message key='search' /]</legend>
+							<input placeholder="[@liferay_ui.message key='search' /]..." name="${configuration.searchQuery}" id="${configuration.searchQuery}" />
+							<button class="btn btn-monospaced" type="submit" aria-label="submit">
+								[@clay.icon symbol="search" /]
+							</button>
+						</fieldset>
+					</form>
+				</div>
+				<a href="#" class="menu-action-close">
+					[@clay.icon symbol="times" /]
+				</a>
+			</div>
+	</div>
+	
+	[#if !themeDisplay.isSignedIn()]
+	<div class="site-main-login">
+		<div class="main-login-container">
+			<div class="menu-header d-flex">
+				<img src="${themeDisplay.getCompanyLogo()}" alt="site logo" class="website-logo-alt">
+				<a href="#" class="menu-action-close">
+					[@clay.icon symbol="times" /]
+				</a>
+			</div>
+			[#assign 
+				loginPref = freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone") 
+			/]
+
+			[@liferay_portlet["runtime"]
+			defaultPreferences=loginPref
+			portletName="com_liferay_login_web_portlet_LoginPortlet"
+			/]
+		</div>
+	</div>
+	[/#if]
+	
+	[#if configuration.showBanner]
+		<div class="slider">
+            <div class="cd-slider-wrapper">
+                <ul class="cd-slider">
+                    [#list 0..configuration.numberOfSlides-1 as i]
+                        <li class="${(i==0)?then('active','')}">
+                            <div class="cd-half-block image" style="background-image:url('${Fondo.getData()}')" />
+                            <div class="cd-half-block content bg-${Color.getData()}">
+                                <div>
+                                    <h2 data-lfr-editable-id="${i}-title" data-lfr-editable-type="rich-text">
+                                        Heading Example
+                                    </h2>
+                                    <p data-lfr-editable-id="${i}-subtitle" data-lfr-editable-type="rich-text">
+                                        This is a simple banner component that you can use when
+                                        you need extra attention to featured content or
+                                        information.
+                                    </p>
+                                    <p>
+                                        <a 
+                                            data-senna-off="true" 
+                                            data-lfr-editable-id="${i}-link"
+                                            data-lfr-editable-type="link"
+                                            href="" 
+                                            class="btn btn-outline-primary text-white border-white"
+                                            id="fragment-${fragmentEntryLinkNamespace}-${i}-link"
+                                        >
+                                            Go Somewhere
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    [/#list]
+                </ul>
+                <ol class="cd-slider-navigation">
+                    [#list 0..configuration.numberOfSlides-1 as i]
+                        <li class="navigation-item ${(i==0)?then('selected','')}">
+                            <a class="navigation-item-link" href="#0">${(i+1 < 10)?then("0" + (i+1),i+1)}</a>
+                        </li>
+                    [/#list]
+                </ol>
+            </div>
+		</div>
+	[/#if]
+	
+</div>

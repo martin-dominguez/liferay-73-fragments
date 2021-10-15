@@ -1,0 +1,53 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "/search",
+					"label": "search-page",
+					"name": "searchPage",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "/search"
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "q",
+					"label": "search-query",
+					"name": "searchQuery",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "q"
+					}
+				}
+			],
+			"label": "search"
+		},
+		{
+			"fields": [
+				{
+					"defaultValue": false,
+					"label": "show-banner",
+					"name": "showBanner",
+					"type": "checkbox"
+				},
+				{
+					"dataType": "int",
+					"defaultValue": "3",
+					"label": "number-of-slides",
+					"name": "numberOfSlides",
+					"type": "text",
+					"typeOptions": {
+						"validation": {
+							"min": 1,
+							"type": "number"
+						}
+					}
+				}
+			],
+			"label": "banner"
+		}
+	]
+}
