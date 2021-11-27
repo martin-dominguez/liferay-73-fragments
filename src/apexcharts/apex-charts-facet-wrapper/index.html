@@ -1,0 +1,25 @@
+<div class="apexcharts-wrapper">
+	<lfr-drop-zone>Drop your Facet here...</lfr-drop-zone>
+	<div class="panel panel-default search-facet lfr-panel lfr-panel-extended" id="INSTANCE_${configuration.uniqueIdentifier}_facetCategoryChart">
+		<div class="panel-heading" id="INSTANCE_${configuration.uniqueIdentifier}_facetPanelHeader" role="tab">
+			<div class="h4 panel-title">
+				<a aria-controls="INSTANCE_${configuration.uniqueIdentifier}_facetPanelContent" aria-expanded="true" class="collapse-icon collapse-icon-middle " data-parent="#INSTANCE_${configuration.uniqueIdentifier}_facetChart" data-toggle="liferay-collapse" href="#INSTANCE_${configuration.uniqueIdentifier}_facetPanelContent" role="button">
+					[@liferay_ui["message"] key=configuration.facetType /]
+					<span class="collapse-icon-closed" id="ored____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-angle-right" focusable="false"><use href="/o/classic-theme/images/clay/icons.svg#angle-right"></use></svg></span>
+					<span class="collapse-icon-open" id="fehs____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-angle-down" focusable="false"><use href="/o/classic-theme/images/clay/icons.svg#angle-down"></use></svg></span>
+				</a>
+			</div>
+		</div>
+		<div aria-labelledby="INSTANCE_${configuration.uniqueIdentifier}_facetPanelHeader" class="collapse panel-collapse show" id="INSTANCE_${configuration.uniqueIdentifier}_facetPanelContent" role="tabpanel">
+			<div class="panel-body" id="INSTANCE_${configuration.uniqueIdentifier}_facetPanelBody">
+				<div id="chart-${configuration.uniqueIdentifier}"></div>
+			</div>
+		</div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+  var facetSeries = facetSeries || [3, 4, 5];
+	var facetLabels = facetLabels || ["a","b","c"];
+	var facetIds = facetIds || ["id1", "id2", "id3"];
+</script>

@@ -1,0 +1,116 @@
+{
+	"fieldSets": [
+		{
+			"label": "apex-options",
+			"fields": [
+				{
+					"name": "uniqueIdentifier",
+					"label": "unique-identifier-label",
+					"description": "unique-identifier-description",
+					"type": "text",
+					"dataType": "string",
+					"typeOptions": {
+						"placeholder": "XXXXX"
+					},
+					"defaultValue": "12345"
+				},
+				{
+					"name": "chartType",
+					"label": "chart-type-label",
+					"description": "chart-type-description",
+					"type": "select",
+					"dataType": "string",
+					"typeOptions": {
+						"validValues": [
+							{"value": "pie"},
+							{"value": "donut"}
+						]
+					},
+					"defaultValue": "pie"
+				},
+				{
+					"name": "facetType",
+					"label": "facet-type-label",
+					"description": "facet-type-description",
+					"type": "select",
+					"dataType": "string",
+					"typeOptions": {
+						"validValues": [
+							{"value": "category"},
+							{"value": "folder"},
+							{"value": "tag"},
+							{"value": "type"},
+							{"value": "user"}
+						]
+					},
+					"defaultValue": "category"
+				}
+			]
+		},
+		{
+			"configurationRole": "style",
+			"fields":[
+				{
+					"name": "monochrome",
+					"label": "monochrome-label",
+					"description": "monochrome-description",
+					"type": "checkbox",
+					"defaultValue": true
+				},
+				{
+					"name": "monoColor",
+					"label": "mono-color-label",
+					"description": "mono-color-description",
+					"type": "colorPalette",
+					"dataType": "object",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "dark"
+							},
+							{
+								"value": "light"
+							}
+						]
+					},
+					"defaultValue": {
+						"cssClass": "black",
+						"rgbValue": "rgb(0,0,0)"
+					}
+				}
+			],
+			"label": "apex-chart-monocrome-options"
+		},
+		{
+			"configurationRole": "style",
+			"fields":[
+				{
+					"dataType": "string",
+					"defaultValue": "palette1",
+					"description": "palette-description",
+					"label": "palette-label",
+					"name": "palette",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "paletteXX"
+					}
+				},
+				{
+					"name": "paletteMode",
+					"label": "palette-mode-label",
+					"description": "palette-mode-description",
+					"type": "select",
+					"dataType": "string",
+					"typeOptions": {
+						"validValues": [
+							{"value": "light"},
+							{"value": "dark"}
+						]
+					},
+					"defaultValue": "light"
+				}
+			],
+			"label": "apex-chart-palette-options"
+		}
+	]
+}
